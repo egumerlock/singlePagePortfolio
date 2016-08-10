@@ -1,0 +1,94 @@
+.bubble {
+  border-radius: 500px;
+  height: 300px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.move-it {
+  margin-top: -20px;
+}
+
+.move-up {
+  margin-top: -8px;
+  margin-left: 17px;
+}
+
+
+
+.center {
+  text-align: center;
+  margin-left: 42%;
+}
+
+#contact-me-button {
+  margin-right: 10px;
+  background-color: #fff2e6;
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 12px;
+  padding-top: 30px;
+  box-shadow: 0px 10px 50px #cccccc;
+  border: 1px solid gray;
+}
+
+
+#message-text {
+  height: 200px;
+}
+
+.contact-button {
+  float: right;
+
+}
+
+.portfolio-header {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+.aboutme-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.grey-line {
+  margin-top: -20px;
+}
+
+.skills-div {
+  margin-top: -20px;
+}
+
+.progress-container {
+  margin-top: -35px;
+}
+
+.contact-button-div {
+  background-color: black;
+  padding: 40px;
+  height: 100px;
+  width: 250px;
+}
+
+.skills-header {
+  margin-top: -30px;
+  margin-bottom: 70px;
+}
+
+.progress-movement {
+  margin: 20px;
+  width: 250px;
+  height: 100px;
+  display: inline-block;
+}
+
+.ruby {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}

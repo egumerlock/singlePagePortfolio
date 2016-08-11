@@ -350,7 +350,7 @@ window.onload = function onLoad() {
             alignToBottom: false
         },
         from: {color: '#6600ff'},
-        to: {color: '#ff8000'},
+        to: {color: '#ED6A5A'},
   // Set default step function for all animate calls
   step: (state, bar) => {
     bar.path.setAttribute('stroke', state.color);
@@ -367,7 +367,7 @@ window.onload = function onLoad() {
 
     function checkY7() {
         if($(window).scrollTop() > 2850) {
-            progressbar7.animate(.8);
+            progressbar7.animate(.9);
         }
     }
 

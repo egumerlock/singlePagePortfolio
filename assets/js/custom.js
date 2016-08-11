@@ -58,17 +58,13 @@ $(document).ready(function() {
         }
     });
 
-if ( ($(window).height() + 100) < $(document).height() ) {
-    $('#top-link-block').removeClass('hidden').affix({
-            // how far to scroll down before link "slides" into view
-            offset: {top:100}
-        });
-}
+
+
 $('#contact-me-button').hover(function() {
 
     $(this).animate({"width":"200px","font-size":"24pt", "color":"#cccccc"}, 200);
 }, function() {
-    $(this).animate({"width":"350","font-size":"12pt"}, 200);
+    $(this).animate({"width":"350px","font-size":"12pt"}, 200);
 
 });
 
@@ -76,14 +72,29 @@ $('#contact-me-button').hover(function() {
 
 
 window.onload = function onLoad() {
+    $('.button-wrapper').hide();
     $(window).scroll(function(){
-        checkY();
-        checkX();
-        checkrubyY();
-        checkrubyX();
+        checkY1();
+        checkX1();
+        checkY2();
+        checkX2();
+        checkY3();
+        checkX3();
+        checkY4();
+        checkX4();
+        checkY5();
+        checkX5();
+        checkY6();
+        checkX6();
+        checkY7();
+        checkX7();
+        checkY8();
+        checkX8();
+        checkbuttonX();
+        checkbuttonY();
     });
 
-    var javascriptcircle = new ProgressBar.SemiCircle('.progress-movement', {
+    var progressbar1 = new ProgressBar.SemiCircle('.progressbar1', {
         strokeWidth: 6,
         color: '#FFEA82',
         trailColor: '#eee',
@@ -111,19 +122,19 @@ window.onload = function onLoad() {
 }
 });
 
-    function checkY() {
-        if($(window).scrollTop() > 2550) {
-            javascriptcircle.animate(.9);
+    function checkY1() {
+        if($(window).scrollTop() > 2700) {
+            progressbar1.animate(.9);
         }
     }
 
-    function checkX() {
-        if($(window).scrollTop() < 2550) {
-            javascriptcircle.animate(0);
+    function checkX1() {
+        if($(window).scrollTop() < 2700) {
+            progressbar1.animate(0);
         }
     }
 
-    var rubycircle = new ProgressBar.SemiCircle('.ruby', {
+    var progressbar2 = new ProgressBar.SemiCircle('.progressbar2', {
         strokeWidth: 6,
         color: '#FFEA82',
         trailColor: '#eee',
@@ -151,16 +162,277 @@ window.onload = function onLoad() {
 }
 });
 
-    function checkrubyY() {
-        if($(window).scrollTop() > 2550) {
-            rubycircle.animate(.8);
+    function checkY2() {
+        if($(window).scrollTop() > 2700) {
+            progressbar2.animate(.8);
         }
     }
 
-    function checkrubyX() {
-        if($(window).scrollTop() < 2550) {
-            rubycircle.animate(0);
+    function checkX2() {
+        if($(window).scrollTop() < 2700) {
+            progressbar2.animate(0);
         }
     }
+    var progressbar3 = new ProgressBar.SemiCircle('.progressbar3', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY3() {
+        if($(window).scrollTop() > 2700) {
+            progressbar3.animate(.8);
+        }
+    }
+
+    function checkX3() {
+        if($(window).scrollTop() < 2700) {
+            progressbar3.animate(0);
+        }
+    }
+
+    var progressbar4 = new ProgressBar.SemiCircle('.progressbar4', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY4() {
+        if($(window).scrollTop() > 2700) {
+            progressbar4.animate(.8);
+        }
+    }
+
+    function checkX4() {
+        if($(window).scrollTop() < 2700) {
+            progressbar4.animate(0);
+        }
+    }
+
+    var progressbar5 = new ProgressBar.SemiCircle('.progressbar5', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY5() {
+        if($(window).scrollTop() > 2850) {
+            progressbar5.animate(.8);
+        }
+    }
+
+    function checkX5() {
+        if($(window).scrollTop() < 2850) {
+            progressbar5.animate(0);
+        }
+    }
+    var progressbar6 = new ProgressBar.SemiCircle('.progressbar6', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY6() {
+        if($(window).scrollTop() > 2850) {
+            progressbar6.animate(.8);
+        }
+    }
+
+    function checkX6() {
+        if($(window).scrollTop() < 2850) {
+            progressbar6.animate(0);
+        }
+    }
+
+    var progressbar7 = new ProgressBar.SemiCircle('.progressbar7', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY7() {
+        if($(window).scrollTop() > 2850) {
+            progressbar7.animate(.8);
+        }
+    }
+
+    function checkX7() {
+        if($(window).scrollTop() < 2850) {
+            progressbar7.animate(0);
+        }
+    }
+
+    var progressbar8 = new ProgressBar.SemiCircle('.progressbar8', {
+        strokeWidth: 6,
+        color: '#FFEA82',
+        trailColor: '#eee',
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        svgStyle: null,
+        text: {
+            value: '',
+            alignToBottom: false
+        },
+        from: {color: '#FFEA82'},
+        to: {color: '#ff8000'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+  } else {
+      bar.setText(value);
+  }
+
+  bar.text.style.color = state.color;
+}
+});
+
+    function checkY8() {
+        if($(window).scrollTop() > 2850) {
+            progressbar8.animate(.8);
+        }
+    }
+
+    function checkX8() {
+        if($(window).scrollTop() < 2850) {
+            progressbar8.animate(0);
+        }
+    }
+
+    $('#contact-me-button').hover(function() {
+
+        $(this).animate({"width":"350px", "height":"70px", "color":"blue"}, 300);
+    }, function() {
+        $(this).animate({"width":"200px", "height":"70px"}, 500);
+
+    });
+
+    function checkbuttonX() {
+        if($(window).scrollTop() > 2900) {
+            $( ".button-wrapper" ).show( "slow", function() {
+    // Animation complete.
+            });
+        }
+    }
+    function checkbuttonY() {
+        if($(window).scrollTop() < 2900) {
+            $( ".button-wrapper" ).hide( "slow", function() {
+
+            });
+        }
+    }
+
 };
-

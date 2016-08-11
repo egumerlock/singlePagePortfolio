@@ -283,7 +283,7 @@ window.onload = function onLoad() {
 
     function checkY5() {
         if($(window).scrollTop() > 2850) {
-            progressbar5.animate(.8);
+            progressbar5.animate(.6);
         }
     }
 

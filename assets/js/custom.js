@@ -1,8 +1,4 @@
 $(document).ready(function() {
-
-    var ProgressBar = require('progressbar.js')
-    var line = new ProgressBar.Line('.progress-movement');
-
     'use strict';
     //Intialize Slider
     var slider = new Swiper('#hero', {
@@ -11,13 +7,22 @@ $(document).ready(function() {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
-        loop: true,
         parallax: true,
-        speed:1000,
+        speed: 1000,
     });
 
-   // Initialize Search
-   $('[data-pages="search"]').search({
+    //Intialize Testamonials
+    var testimonials_slider = new Swiper('#testimonials_slider', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        speed: 1000
+    });
+
+    // Initialize Search
+    $('[data-pages="search"]').search({
         // Bind elements that are included inside search overlay
         searchField: '#overlay-search',
         closeButton: '.overlay-close',
@@ -39,7 +44,7 @@ $(document).ready(function() {
                 and update DOM and use the following block
                 'searchResults.find('.result-name').each(function() {...}'
                 inside the AJAX callback to update the DOM
-                */
+            */
 
             // Timeout is used for DEMO purpose only to simulate an AJAX call
             clearTimeout($.data(this, 'timer'));
@@ -62,9 +67,9 @@ $(document).ready(function() {
 
 $('#contact-me-button').hover(function() {
 
-    $(this).animate({"width":"200px","font-size":"24pt", "color":"#cccccc"}, 200);
+    $(this).animate({"width":"200px","font-size":"10.5pt", "color":"#cccccc", "background-color":"blue"}, 100);
 }, function() {
-    $(this).animate({"width":"350px","font-size":"12pt"}, 200);
+    $(this).animate({"width":"350px","font-size":"10.5pt"}, 100);
 
 });
 
@@ -106,7 +111,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ED6A5A'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -136,7 +141,7 @@ window.onload = function onLoad() {
 
     var progressbar2 = new ProgressBar.SemiCircle('.progressbar2', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -146,7 +151,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ff8000'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -175,7 +180,7 @@ window.onload = function onLoad() {
     }
     var progressbar3 = new ProgressBar.SemiCircle('.progressbar3', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -185,7 +190,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ff8000'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -215,7 +220,7 @@ window.onload = function onLoad() {
 
     var progressbar4 = new ProgressBar.SemiCircle('.progressbar4', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -225,7 +230,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ff8000'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -255,7 +260,7 @@ window.onload = function onLoad() {
 
     var progressbar5 = new ProgressBar.SemiCircle('.progressbar5', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -265,8 +270,8 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#ff8000'},
+        from: {color: '#6600ff'},
+        to: {color: '#ffff4d'},
   // Set default step function for all animate calls
   step: (state, bar) => {
     bar.path.setAttribute('stroke', state.color);
@@ -294,7 +299,7 @@ window.onload = function onLoad() {
     }
     var progressbar6 = new ProgressBar.SemiCircle('.progressbar6', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -304,7 +309,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ff8000'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -334,7 +339,7 @@ window.onload = function onLoad() {
 
     var progressbar7 = new ProgressBar.SemiCircle('.progressbar7', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -344,7 +349,7 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
+        from: {color: '#6600ff'},
         to: {color: '#ff8000'},
   // Set default step function for all animate calls
   step: (state, bar) => {
@@ -374,7 +379,7 @@ window.onload = function onLoad() {
 
     var progressbar8 = new ProgressBar.SemiCircle('.progressbar8', {
         strokeWidth: 6,
-        color: '#FFEA82',
+        color: '#6600ff',
         trailColor: '#eee',
         trailWidth: 1,
         easing: 'easeInOut',
@@ -384,8 +389,8 @@ window.onload = function onLoad() {
             value: '',
             alignToBottom: false
         },
-        from: {color: '#FFEA82'},
-        to: {color: '#ff8000'},
+        from: {color: '#6600ff'},
+        to: {color: '#ED6A5A'},
   // Set default step function for all animate calls
   step: (state, bar) => {
     bar.path.setAttribute('stroke', state.color);
@@ -402,7 +407,7 @@ window.onload = function onLoad() {
 
     function checkY8() {
         if($(window).scrollTop() > 2850) {
-            progressbar8.animate(.8);
+            progressbar8.animate(.9);
         }
     }
 

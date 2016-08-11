@@ -22,18 +22,6 @@
   margin-left: 42%;
 }
 
-#contact-me-button {
-  margin-right: 10px;
-  background-color: #fff2e6;
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  border-radius: 8px;
-  font-size: 12px;
-  padding-top: 30px;
-  box-shadow: 0px 10px 50px #cccccc;
-  border: 1px solid gray;
-}
 
 
 #message-text {
@@ -79,16 +67,107 @@
   margin-bottom: 70px;
 }
 
-.progress-movement {
+.progressbar1 {
   margin: 20px;
-  width: 250px;
+  width: 230px;
   height: 100px;
   display: inline-block;
+  float: left;
+  margin-bottom: 50px;
 }
 
-.ruby {
+.progressbar2 {
   margin: 20px;
-  width: 200px;
+  width: 230px;
   height: 100px;
   display: inline-block;
+  float: left;
+  margin-bottom: 50px;
 }
+
+.progress-wrapper {
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.progressbar3 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.progressbar4 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.progressbar5 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.progressbar6 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.progressbar7 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.progressbar8 {
+  margin: 20px;
+  width: 230px;
+  height: 100px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+}
+
+#contact-me-button {
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  height: 70px;
+  width: 200px;
+  margin: auto;
+  border-radius: 2px;
+  font-size: 14px;
+  padding-top: 23px;
+  box-shadow: 0px 10px 50px #cccccc;
+  margin-top: 40px;
+  border: 2px solid black;
+  color: #0073e6;
+}
+
+#contact-me-button:hover {
+  color: #2a85fc;
+}
+
+.button-wrapper {
+  margin: auto;
+  float: left;
+  position: absolute;
+  margin-top: 340px;
+  border-radius: 50px;
+}
+

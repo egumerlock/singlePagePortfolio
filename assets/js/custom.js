@@ -78,7 +78,7 @@ $('#contact-me-button').hover(function() {
 
 window.onload = function onLoad() {
     $('.button-wrapper').hide();
-    $('#preloader').delay(400).fadeOut("slow");
+
     $(window).scroll(function(){
         checkY1();
         checkX1();
